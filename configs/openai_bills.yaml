@@ -1,0 +1,43 @@
+# Configuration for OpenAI experiment on Bills dataset
+experiment_name: "ICNLSP Experiment: Alignment 1"
+mlflow_online: False
+dataset_name: "bills-hoyle-2022"
+text_column: "summary"
+gold_label: "topic"
+train_data_sampling_seed: 42
+taxonomy_train_data_size: 1100
+clf_train_data_size: 1340
+random_state_train_test_split: 580
+loops: 1
+train_tag_text: "bills - from script"
+evaluation_model: "mistral/mistral-large-2411"
+
+model_params:
+  use_case: "A taxonomy to organise these bills into categories by topics. Aim at around 20-25 topics. Examples: 'Government Operations', 'Environment'..."
+  data_description: "Each data point is a bill from a sample of thousands of bills."
+  temperature: 0.1
+  max_completion_tokens: null
+  retries: 5
+  wait_time: 10
+  summaries_max_thread_workers: 20
+  cluster_name_length: 4
+  cluster_description_length: 15
+  max_num_clusters: 55
+  summary_length: 30
+  summary_explanation_length: 15
+  taxonomy_explanation_length: 50
+  classification_explanation_length: 15
+  taxonomy_update_suggestion_length: 150
+  taxonomy_refinement_iterations: 10
+  summary_model: "openai/gpt-4o-mini-2024-07-18"
+  taxonomy_generation_model: "openai/o3-mini-2025-01-31"
+  synthesis_mode: False
+  llm_classification_model: "openai/gpt-4o-mini-2024-07-18"
+  encoder_model_name: "all-MiniLM-L6-v2"
+  classifier_train_test_split_ratio: 0.75
+  shuffle_training_data: True
+  shuffle_taxonomy_data: True
+  shuffle_classifer_data: True
+  shuffle_random_state: null
+  verbose: True
+  debug: False
