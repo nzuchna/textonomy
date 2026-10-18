@@ -2,6 +2,8 @@
 
 Code and experiment configurations accompanying the ICNLSP 2026 paper of the same name.
 
+📄 **Paper:** [ACL Anthology](https://aclanthology.org/2026.icnlsp-1.3/)
+
 **Noah Zuchna**<sup>1,2</sup>, **Martin Stoll**<sup>2</sup>, **Jan Blechschmidt**<sup>2</sup>  
 <sup>1</sup>Staffbase &nbsp;&nbsp; <sup>2</sup>Department of Mathematics, Chemnitz University of Technology, Germany  
 Contact: n.zuchna@gmail.com
@@ -104,15 +106,23 @@ This repository uses MLflow for experiment tracking:
 If you use this code, please cite the paper:
 
 ```bibtex
-@inproceedings{zuchna2026textonomy,
-  title     = {Textonomy: A TnT-LLM-Based Approach for Interpretable Topic Modeling at Scale},
-  author    = {Zuchna, Noah and Stoll, Martin and Blechschmidt, Jan},
-  booktitle = {Proceedings of the International Conference on Natural Language and Speech Processing (ICNLSP)},
-  year      = {2026}
+@inproceedings{zuchna-etal-2026-textonomy,
+    title = "Textonomy: A {T}n{T}-{LLM}-Based Approach for Interpretable Topic Modeling at Scale",
+    author = "Zuchna, Noah  and
+      Stoll, Martin  and
+      Blechschmidt, Jan",
+    editor = "Abbas, Mourad  and
+      Freihat, Abed Alhakim",
+    booktitle = "Proceedings of the 9th International Conference on Natural Language and Speech Processing ({ICNLSP}-2026)",
+    month = sep,
+    year = "2026",
+    address = "University of Trento, Trento, Italy",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.icnlsp-1.3/",
+    pages = "17--32",
+    ISBN = "979-8-89176-458-3"
 }
 ```
-
-The proceedings link and DOI will be added here once they are published.
 
 ## ⚖️ License
 
